@@ -6,10 +6,16 @@
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
+    <h1> Please click the image of the product you like best.</h1>
+    <h2> The images refresh 25 times, then hit the Show Chart button.</h2>
     <ul id="images">
 
     </ul>
-    <canvas id="my_chart" width="400" height="400"></canvas>
+    <button type="button" name="button" class="hidden" id="show_chart">Show Charts</button>
+  <div id="chart">
+      <canvas id="my_chart" width="400" height="400"></canvas>
+      <canvas id="my_chart1" width="400" height="400"></canvas>
+  </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.js"></script>
     <script type ="text/javascript" src = "app.js"></script>
   </body>

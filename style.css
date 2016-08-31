@@ -1,11 +1,35 @@
+body {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: rgba(79,81,84,0.7);
+}
+
+h1,h2 {
+  text-align: center;
+}
+
 ul {
   list-style: none;
 
 }
 li {
+  margin-top: 35px;
   display: inline-block;
   width: 300px;
+  margin-right: 20px;
 }
 li img {
-  max-width: 300px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  opacity: 0.7;
+}
+.hidden {
+  visibility: hidden;
+}
+button {
+  height: 50px;
+  width: 100px;
+  background-color: rgba(39,41,44,0.7);
+  color: white;
 }
