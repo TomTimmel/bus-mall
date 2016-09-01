@@ -1,11 +1,15 @@
 body {
-  width: 1000px;
+  width: 1020px;
   margin: 0 auto;
   background-color: rgba(79,81,84,0.7);
 }
 
 h1,h2 {
   text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+h1 {
+  font-size: 45px;
 }
 
 ul {
@@ -16,13 +20,14 @@ li {
   margin-top: 35px;
   display: inline-block;
   width: 300px;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 li img {
   width: 250px;
   height: 250px;
-  border: 1px solid black;
+  border: 3px solid rgba(39,41,44,0.7);
   opacity: 0.7;
+  border-radius: 3px;
 }
 .hidden {
   visibility: hidden;
@@ -32,4 +37,14 @@ button {
   width: 100px;
   background-color: rgba(39,41,44,0.7);
   color: white;
+  border-radius: 3px;
+  border: 2px solid black;
+  font-size: 18px;
+  margin-left: 38px;
+  margin-bottom: 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+#chart {
+  background-color: rgba(39,41,44,0.7);
+  border-radius: 3px;
 }
