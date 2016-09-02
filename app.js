@@ -114,10 +114,14 @@ function chartClickHandler(){
   var label = [];
   var chartClicks = [];
   var imageViews = [];
+  var viewPercentage = [];
+
   for( var m = 0; m < images.length; m++){
     label.push(images[m].name);
     chartClicks.push(images[m].clicks);
     imageViews.push(images[m].views);
+    viewPercentage.push(Math.round((chartClicks[m] / imageViews[m]) * 100));
+    console.log(viewPercentage);
   }
   JSON.stringify(images);
   var jsonImages = JSON.stringify(images);
@@ -196,8 +200,8 @@ function chartClickHandler(){
     data: {
       labels: label,
       datasets: [{
-        label: 'Number of Image Views',
-        data: imageViews,
+        label: 'Percentage of Clicks to Image Views',
+        data: viewPercentage,
         backgroundColor: [
           'rgba(255, 99, 132, 0.5)',
           'rgba(54, 162, 235, 0.5)',
